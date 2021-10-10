@@ -1,0 +1,21 @@
+.novinky{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1em;
+    margin-bottom: 2em;
+}
+.novinky__clanek{
+    background-color: var(--sekundarni-barva);
+    grid-column: 1 / -1;
+    padding: 5%;
+    font-size: 0.8em;
+}
+.novinky__clanek h5{
+    color: var(--primarni-barva);
+    font-size: 1em;
+    padding: 0.8em 0;
+}
+.novinky__clanek span{
+    color: gray;
+}

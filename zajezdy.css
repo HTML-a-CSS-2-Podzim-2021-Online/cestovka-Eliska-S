@@ -1,0 +1,79 @@
+/*mobilni telefony*/
+.zajezdy{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    margin-bottom: 2em;
+}
+.zajezdy__karta,
+.zajezdy__karta--last-minute{
+    position: relative;
+    grid-column: 1 / -1;
+    color: white;
+    padding: 5%;
+}
+.zajezdy__karta:nth-child(1){
+    background-image: url(podklady/palmy.jpg);
+    background-size: cover;
+    aspect-ratio: 5 / 3;
+}
+.zajezdy__karta:nth-child(2){
+    background-image: url(podklady/jezero.jpg);
+    background-size: cover;
+    aspect-ratio: 5 / 2;
+}
+.zajezdy__karta:nth-child(3){
+    background-image: url(podklady/nakole.jpg);
+    background-size: cover;
+    aspect-ratio: 5 / 2;
+}
+.zajezdy__karta span,
+.zajezdy__karta--last-minute span{
+    position: absolute;
+    background-color: var(--primarni-barva);
+    font-size: 3vw;
+    text-align: center;
+    width: 20vw;
+    padding: 1em 0.5em;
+}
+.zajezdy__karta h2,
+.zajezdy__karta--last-minute h2{
+    position: absolute;
+    top: 60%;
+    font-size: 5vw;
+}
+.zajezdy__karta h3,
+.zajezdy__karta--last-minute h3{
+    position: absolute;
+    top: 65%;
+    font-size: 4vw;
+}
+.zajezdy__karta p,
+.zajezdy__karta--last-minute p{
+    position: absolute;
+    top: 83%;
+    font-size: 3vw;
+}
+
+.zajezdy__karta--last-minute:nth-child(4){
+    background-image: url(podklady/lodicka.jpg);
+    background-size: cover;
+    aspect-ratio: 5 / 3;
+    grid-row: 2;
+}
+.zajezdy__karta--last-minute h2{
+    top: 50%;
+}
+.zajezdy__karta--last-minute p{
+    top: 75%;
+}
+.zajezdy__karta--last-minute:nth-child(2){
+    background-image: url(podklady/zatoka.jpg);
+    background-size: cover;
+    aspect-ratio: 5 / 2;
+}
+.zajezdy__karta--last-minute:nth-child(3){
+    background-image: url(podklady/podkova.jpg);
+    background-size: cover;
+    aspect-ratio: 5 / 2;
+}

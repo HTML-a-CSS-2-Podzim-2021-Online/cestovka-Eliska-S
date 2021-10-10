@@ -1,0 +1,36 @@
+@import url(hlavicka.css);
+@import url(zajezdy.css);
+@import url(sluzby.css);
+@import url(novinky.css);
+@import url(footer.css);
+
+/*intuitivní border-box*/
+html {
+    box-sizing: border-box;
+}
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+/*custom property*/
+:root {
+    --primarni-barva: #F03000;
+    --sekundarni-barva: #F0F0F0;
+}
+/*obecné*/
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 1.5em;
+    text-align: left;
+}
+ul{
+    list-style-type: none;
+}
+h1,h2,h3,h4,h5{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+p,ul,li{
+    margin: 0;
+    padding: 0;
+}

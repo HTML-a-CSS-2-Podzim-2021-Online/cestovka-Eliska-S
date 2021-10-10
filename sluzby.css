@@ -1,0 +1,30 @@
+/*mobilni styly*/
+.seznam-sluzeb{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4,13vh);
+    grid-gap: 0.5em;
+    margin-bottom: 2em;
+}
+.sluzby__karta{
+    grid-column: 1 / -1;
+    background-color: var(--sekundarni-barva);
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    align-items: top;
+    padding: 5%;
+}
+.sluzby__karta img{
+    width: 13%;
+    height: 30px;
+    padding-right: 1em;
+}
+.sluzby__karta h4{
+    color: var(--primarni-barva);
+    font-size: 3.5vw;
+}
+.sluzby__karta p{
+    font-size: 3vw;
+    padding-left: 13%;
+}

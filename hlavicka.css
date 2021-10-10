@@ -1,0 +1,29 @@
+/*mobilni telefony*/
+.hlavicka {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.hlavicka img{
+    margin: 0 auto;
+    grid-column: 1 / -1;
+}
+.hlavicka__menu{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 2em auto;
+    grid-column: 1 / -1;
+    grid-row: 2;
+    font-size: 3vw;
+    font-weight: bold;
+    color: var(--primarni-barva);
+}
+.hlavicka__menu li{
+    width: 33%;
+    text-align: center;
+    padding: 1.5em 0;
+}
+.hlavicka__menu li:nth-child(3){
+    background-color: var(--primarni-barva);
+    color: white;
+}
