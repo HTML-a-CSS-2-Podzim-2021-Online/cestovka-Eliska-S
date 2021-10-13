@@ -1,7 +1,7 @@
 /*mobilni telefony*/
 .hlavicka {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(12, 1fr);
 }
 .hlavicka img{
     margin: 0 auto;
@@ -13,17 +13,33 @@
     width: 100%;
     margin: 2em auto;
     grid-column: 1 / -1;
-    grid-row: 2;
-    font-size: 3vw;
     font-weight: bold;
     color: var(--primarni-barva);
 }
 .hlavicka__menu li{
     width: 33%;
     text-align: center;
-    padding: 1.5em 0;
+    padding: 1.2em 0;
 }
 .hlavicka__menu li:nth-child(3){
     background-color: var(--primarni-barva);
     color: white;
+}
+
+@media screen and (min-width: 620px){
+    .hlavicka{
+        margin: 2em auto;
+        align-items: center;
+    }   
+    .hlavicka img{
+        grid-column: 1/4;
+    }
+    .hlavicka__menu{
+        grid-column: 5/13;
+        margin: 0;
+    }
+    .hlavicka__menu li{
+        padding: 1.2em 0.4em;
+        font-size: 0.9em;
+    }
 }

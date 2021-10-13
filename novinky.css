@@ -1,21 +1,28 @@
 .novinky{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
-    grid-gap: 1em;
-    margin-bottom: 2em;
+    gap: 0.5em;
 }
 .novinky__clanek{
     background-color: var(--sekundarni-barva);
     grid-column: 1 / -1;
-    padding: 5%;
-    font-size: 0.8em;
+    padding: 1.5em;
 }
 .novinky__clanek h5{
     color: var(--primarni-barva);
-    font-size: 1em;
     padding: 0.8em 0;
 }
 .novinky__clanek span{
     color: gray;
+}
+.novinky__clanek p{
+    font-weight: bold;
+    padding: 0.5em 0;
+}
+
+@media screen and (min-width: 620px){
+    .novinky{
+        gap: 1em;
+    }
 }

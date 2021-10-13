@@ -1,30 +1,47 @@
 /*mobilni styly*/
 .seznam-sluzeb{
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4,13vh);
+    grid-template-columns: repeat(12, 1fr);
     grid-gap: 0.5em;
-    margin-bottom: 2em;
 }
 .sluzby__karta{
     grid-column: 1 / -1;
     background-color: var(--sekundarni-barva);
     display: flex;
-    flex-wrap: wrap;
     text-align: left;
     align-items: top;
-    padding: 5%;
+    padding: 1em;
 }
-.sluzby__karta img{
-    width: 13%;
-    height: 30px;
+.sluzby__karta--ikona img{
+    object-fit: cover;
     padding-right: 1em;
 }
-.sluzby__karta h4{
+.sluzby__karta--popis h4{
     color: var(--primarni-barva);
-    font-size: 3.5vw;
+    padding-bottom: 0.5em;
 }
-.sluzby__karta p{
-    font-size: 3vw;
-    padding-left: 13%;
+
+@media screen and (min-width: 620px) {
+    .seznam-sluzeb{
+        gap: 1em;
+    }
+    .sluzby__karta{
+        text-align: center;
+        display: block;
+    }
+    .sluzby__karta--ikona img{
+        object-fit: cover;
+        padding-right: 0;
+        padding-bottom: 1em;
+    }
+    .sluzby__karta--popis h4,
+    .sluzby__karta--popis p{
+        padding-bottom: 1em;
+    }
+    .sluzby__karta:nth-child(odd){
+        grid-column: 1/7;
+    }
+    .sluzby__karta:nth-child(even){
+        grid-column: 7/13;
+    }
 }

@@ -34,3 +34,12 @@ p,ul,li{
     margin: 0;
     padding: 0;
 }
+p{
+    font-size: 0.8em;
+}
+span{
+    font-size: 0.8em;
+}
+section{
+    margin-bottom: 2em;
+}
