@@ -16,11 +16,17 @@ html {
     --primarni-barva: #F03000;
     --sekundarni-barva: #F0F0F0;
 }
-/*obecné*/
+/*základní styly*/
 body{
     font-family: 'Montserrat', sans-serif;
     margin: 1.5em;
     text-align: left;
+}
+@media screen and (min-width: 960px){
+    body{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 }
 ul{
     list-style-type: none;
@@ -34,10 +40,7 @@ p,ul,li{
     margin: 0;
     padding: 0;
 }
-p{
-    font-size: 0.8em;
-}
-span{
+p, span{
     font-size: 0.8em;
 }
 section{

@@ -7,8 +7,7 @@
 .zajezdy > *{
     grid-column: 1 / -1;
 }
-.zajezdy__karta,
-.zajezdy__karta--last-minute{
+.zajezdy__karta{
     position: relative;
     color: white;
     padding: 1.1em;
@@ -28,31 +27,27 @@
     background-size: cover;
     aspect-ratio: 5 / 2;
 }
-.zajezdy__karta span,
-.zajezdy__karta--last-minute span{
+.zajezdy__karta span{
     position: absolute;
     background-color: var(--primarni-barva);
     text-align: center;
     width: 20vw;
     padding: 1em 0.5em;
 }
-.zajezdy__karta h2,
-.zajezdy__karta--last-minute h2{
+.zajezdy__karta h2{
     position: absolute;
     top: 60%;
-    font-size: 5vw;
+    font-size: 2em;
 }
-.zajezdy__karta h3,
-.zajezdy__karta--last-minute h3{
+.zajezdy__karta h3{
     position: absolute;
     top: 65%;
     font-size: max(0.9em, 18px);
 }
-.zajezdy__karta p,
-.zajezdy__karta--last-minute p{
+.zajezdy__karta p{
     position: absolute;
     top: 83%;
-    font-size: 3vw;
+    font-size: 1em;
 }
 
 .zajezdy__karta--last-minute:nth-child(4){
@@ -82,26 +77,63 @@
 @media screen and (min-width: 620px) {
     .zajezdy__karta:nth-child(1),
     .zajezdy__karta--last-minute:nth-child(4){
-        aspect-ratio: 6 / 3;
+        aspect-ratio: 6/3;
     }
     .zajezdy__karta:nth-child(2),
     .zajezdy__karta--last-minute:nth-child(2){
-        aspect-ratio: 6 / 3;
+        aspect-ratio: 6/3;
         grid-column: 1/7;
     }
     .zajezdy__karta:nth-child(3),
     .zajezdy__karta--last-minute:nth-child(3){
-        aspect-ratio: 6 / 3;
+        aspect-ratio: 6/3;
         grid-column: 7/13;
     }
-    .zajezdy__karta span,
-    .zajezdy__karta--last-minute span{
+    .zajezdy__karta span{
         width: 13vw;
         padding: 0.7em 0;
     }
-    .zajezdy__karta p,
-    .zajezdy__karta--last-minute p{
-        font-size: 2.5vw;
-    }
+}
 
+@media screen and (min-width: 960px){
+    .zajezdy__karta:nth-child(1){
+        grid-column: 1/9;
+        grid-row: 1/3;
+        aspect-ratio: 6/3.06;
+    }
+    .zajezdy__karta:nth-child(2){
+        grid-column: 9/13;
+        grid-row: 1/2;
+    }
+    .zajezdy__karta:nth-child(3){
+        grid-column: 9/13;
+        grid-row: 2/3;
+    }
+    .zajezdy__karta--last-minute:nth-child(4){
+        grid-column: 5/13;
+        grid-row: 2/4;
+        aspect-ratio: 6/3.06;
+    }
+    .zajezdy__karta--last-minute:nth-child(2){
+        grid-column: 1/5;
+        grid-row: 2/3;
+    }
+    .zajezdy__karta--last-minute:nth-child(3){
+        grid-column: 1/5;
+        grid-row: 3/4;
+    }
+    .zajezdy__karta span{
+        width: 8vw;
+        font-size: 1em;
+    }
+    .zajezdy__karta h2{
+        top: 77%;
+    }
+    .zajezdy__karta h3{
+        top: 75%;
+        font-size: 1.2em;
+    }
+    .zajezdy__karta p{
+        top: 89%;
+    }
 }
