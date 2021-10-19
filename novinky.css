@@ -8,15 +8,20 @@
     background-color: var(--sekundarni-barva);
     grid-column: 1 / -1;
     padding: 1.5em;
+    transition: 0.4s;
 }
-.novinky__clanek h5{
+.novinky__clanek:hover{
+    transform: translatex(0.5px) translateY(0.5px);
+    box-shadow: 2px 2px 2px grey;
+}
+.novinky__clanek--nadpis{
     color: var(--primarni-barva);
     padding: 0.8em 0;
 }
-.novinky__clanek span{
+.novinky__clanek--datum{
     color: gray;
 }
-.novinky__clanek p{
+.novinky__clanek--text{
     font-weight: bold;
     padding: 0.5em 0;
 }

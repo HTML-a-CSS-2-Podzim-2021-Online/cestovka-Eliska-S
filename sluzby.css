@@ -11,6 +11,10 @@
     text-align: left;
     align-items: top;
     padding: 1em;
+    transition: 0.4s;
+}
+.sluzby__karta:hover{
+    box-shadow: 2px 2px 2px grey;
 }
 .sluzby__karta--ikona{
     width: 20%;
